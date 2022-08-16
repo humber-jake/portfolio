@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+:root{
+    --primary-color: #4f89bc;
+    --primary-light: #dce8f3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem auto;
+}
+.photo{
+    width: 70%;
+    max-width: 500px;
+    margin: 2rem auto 0 auto;
+}
+.name{
+    color: var(--primary-color);
+    /* font-family: "Abril Fatface", serif; */
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 2rem;
+}
+.SectionTitle{
+    margin-top: 0;
+    color: var(--primary-color);
+    /* font-family: "Abril Fatface", serif; */
+    font-size: 1.5rem;
+}
+.byline{
+    color: var(--primary-color);
+    margin: auto;
+    font-size: 1rem;
+}
+.titleContainer{
+    grid-row: 2/2;
+    align-self: center;
+    justify-self: center;
+}
+.Section{
+    width: 90%;
+    margin: 1rem auto;
+    min-height: 300px;
+    border: 2px solid var(--primary-light);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.SectionContent{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (min-width: 600px){
+    .Section{
+        width: 75%;
+    }
+    .SectionContent{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container{
+        margin-top: 100px;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin-bottom: 200px;
+    }
+    .photo{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .titleContainer{
+        grid-row: 1/1;
+        margin-top: 5rem;
+        width: 80%;
+    }
+    .name{
+        font-size: 3rem;
+    }
+    .byline{
+        font-size: 1.5rem;
+    }
 }
