@@ -1,0 +1,50 @@
+.Footer{
+    margin-top: 3rem;
+    height: 400px;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+    outline: 0.5rem solid var(--primary-color);
+    outline-offset: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+.Links{
+    padding: 3rem;
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+}
+.Links a{
+    width: fit-content;
+    margin: 0rem 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+.SocialMedia{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem;
+}
+.SocialMedia svg{
+    margin: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+@media screen and (min-width: 600px) {
+    .SocialMedia, .Links{
+        width: 60%;
+    }
+    .SocialMedia svg{
+        margin: 0.5rem;
+        color: white;
+        text-decoration: none;
+        font-size: 3rem;
+    }
+}

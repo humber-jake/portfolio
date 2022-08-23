@@ -5,7 +5,7 @@ import resume from './resume';
 import Education from './Education.js';
 import Technology from './Technology.js'
 import Projects from './Projects';
-import {Routes, Route } from "react-router-dom"
+import Footer from './Footer';
 
 function App() {
 
@@ -28,7 +28,8 @@ function App() {
 
         <Technology content={resume.technology} />
         <Projects projects={resume.projects} isHomePage={true}/>
-        <Education content={resume.education} />
+        <Education content={resume.education} isHomePage={true}/>
+        <Footer/>
       </div>
     </div>
   );

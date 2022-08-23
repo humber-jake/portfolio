@@ -44,7 +44,7 @@ function Technology(props) {
                             [
                                 {toggle
                                 ? list
-                                : [list.slice(0,3), <span className='punctuation'>...</span>]
+                                : [list.slice(0,3), <span key='...' className='punctuation'>...</span>]
                                 }
 
                                 {toggle &&

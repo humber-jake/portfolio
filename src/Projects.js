@@ -3,6 +3,7 @@ import Project from './Project.js'
 import './Projects.css'
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar.js';
+import Footer from './Footer.js';
 
 
 function Projects(props) {
@@ -32,12 +33,16 @@ function Projects(props) {
                     {isHomePage
                     ? projmap.slice(0,3) 
                     : projmap
-                    }
+                }
                 </div>
                 {isHomePage &&
                 <Link to='Projects' className='More'>More...</Link>
                 }
-        </div>
+
+            </div>
+            {!isHomePage &&
+            <Footer/>
+            }
         </>
     );
 }
