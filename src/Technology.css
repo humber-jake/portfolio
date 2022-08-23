@@ -5,16 +5,17 @@
 .tech{
     box-sizing: border-box;
     margin: 0.5rem auto;
-    /* width: 95%; */
+    width: 100%;
     /* max-width: 500px; */
     border-radius: 40px;
     min-height: 200px;
     z-index: 10;
 }
 .codeArea{
-    margin: 0.5rem;
-    display: grid;
-    grid-template-columns: 10fr 90fr;
+    align-self: center;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
     background-color: white;
     border: 1px solid var(--primary-light);
     border-radius: 10px;

@@ -27,8 +27,8 @@ function App() {
       <div className="body">
 
         <Technology content={resume.technology} />
-        {/* <Education content={resume.education} /> */}
         <Projects projects={resume.projects} isHomePage={true}/>
+        <Education content={resume.education} />
       </div>
     </div>
   );

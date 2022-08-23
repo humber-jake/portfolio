@@ -1,12 +1,11 @@
 .Projects{
     margin: 0 auto;
-    width: 80%;
-    
+    width: 80%;   
 }
 .ProjectGallery{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 0px;
 }
 @media screen and (min-width: 800px) {
     .ProjectGallery{

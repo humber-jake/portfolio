@@ -15,7 +15,7 @@
 }
 .NavLink{
     color: var(--primary-dark);
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 0rem;
 	background-image: linear-gradient(to bottom, transparent 95%, var(--primary-color) 0);
 	background-size: 0% 100%;
 	background-repeat: no-repeat;
@@ -27,4 +27,9 @@
     transition: all 200ms ease-in-out;
     background-size: 100% 100%;
 	cursor: pointer;
+}
+@media screen and (min-width: 600px) {
+    .NavLink{
+        padding: 0.5rem 2rem;
+    }
 }

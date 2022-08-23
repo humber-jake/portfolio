@@ -30,13 +30,13 @@ export default {
                     title: "The Modern React Bootcamp",
                     instructor: "Colt Steele",
                     host: "Udemy.com",
-                    completed: "2022"
+                    completed: "2022",
                 },
                 {
                     title: "The Web Developer Bootcamp",
                     instructor: "Colt Steele",
                     host: "Udemy.com",
-                    completed: "2020"
+                    completed: "2020",
                 }
             ]
     },
@@ -162,15 +162,6 @@ export default {
             link: 'https://grand-sable-e9d8d6.netlify.app/'
         },
         {
-            name: "Password Generator",
-            tech: [
-                'React'
-            ],
-            year: "2022",
-            description: "A simple password generator created as a utility to generate one time temporary passwords.",
-            link: 'https://serene-beach-45005.herokuapp.com/'
-        },
-        {
             name: "Color Palette",
             tech: [
                 'React',
@@ -192,6 +183,15 @@ export default {
             year: "2021",
             description: "A Jackbox-style online multiplayer version of the classic dice game.",
             link: 'http://agile-anchorage-27851.herokuapp.com/'
+        },
+        {
+            name: "Password Generator",
+            tech: [
+                'React'
+            ],
+            year: "2022",
+            description: "A simple password generator created as a utility to generate one time temporary passwords.",
+            link: 'https://serene-beach-45005.herokuapp.com/'
         },
         {
             name: "Blackbox Generator",

@@ -21,7 +21,7 @@ function Projects(props) {
                 )
 
     return (
-        <div>
+        <>
             {!isHomePage &&
             <Navbar/>
             }
@@ -38,7 +38,7 @@ function Projects(props) {
                 <Link to='Projects' className='More'>More...</Link>
                 }
         </div>
-        </div>
+        </>
     );
 }
 
