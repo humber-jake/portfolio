@@ -1,6 +1,20 @@
 export default {
     name: 'Jacob Humber',
-    byline: 'Please hire me so I can say I\'m a web developer.',
+    byline: 'A self-taught developer with a background in communications and extensive experience in the restaurant industry.',
+    technology: [
+        'HTML5',
+        'CSS3',
+        'JavaScript',
+        'React',
+        'JSS',
+        'MUI',
+        'Node JS',
+        'Express',
+        'MongoDB',
+        'Bootstrap',
+        'Socket.io',
+        'Git',
+    ],
     education: {
         university: {
             name: 'Concordia University',
@@ -145,7 +159,7 @@ export default {
             ],
             year: "2022",
             description: "A wordle clone that allows simultaneous play of five, six, seven, and eight letter puzzles.",
-            link: ''
+            link: 'https://grand-sable-e9d8d6.netlify.app/'
         },
         {
             name: "Password Generator",
@@ -153,8 +167,8 @@ export default {
                 'React'
             ],
             year: "2022",
-            description: "A simple password generator created as a utility to generate one time temporary passwords",
-            link: ''
+            description: "A simple password generator created as a utility to generate one time temporary passwords.",
+            link: 'https://serene-beach-45005.herokuapp.com/'
         },
         {
             name: "Color Palette",
@@ -176,8 +190,8 @@ export default {
                 'Socket.io',
             ],
             year: "2021",
-            description: "Jackbox-style online multiplayer version of the classic dice game",
-            link: ''
+            description: "A Jackbox-style online multiplayer version of the classic dice game.",
+            link: 'http://agile-anchorage-27851.herokuapp.com/'
         },
         {
             name: "Blackbox Generator",
@@ -188,25 +202,12 @@ export default {
                 'Materialize.css',
             ],
             year: "2020",
-            description: "A nonsensical REST API for generator blackbox cooking challenge ingredients",
-            link: ''
+            description: "A nonsensical REST API for generating blackbox cooking challenge ingredients.",
+            link: 'https://polar-savannah-96642.herokuapp.com/'
         },
     ],
     languages: [
         "English",
         "French"
-    ],
-    technology: [
-        'HTML5',
-        'CSS3',
-        'JSS',
-        'React',
-        'MUI',
-        'Node JS',
-        'Express',
-        'MongoDB',
-        'Bootstrap',
-        'Socket.io',
-        'Git',
     ]
 }

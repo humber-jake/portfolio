@@ -1,0 +1,70 @@
+.Education{
+    box-sizing: border-box;
+    margin: 0.5rem auto;
+    width: 95%;
+    max-width: 500px;
+    min-width: 360px;
+    border-radius: 40px;
+}
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+.row{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.name, .location{
+    color: var(--primary-dark);
+    margin: 0.25rem;
+    font-size: 1.25rem;
+}
+.dates{
+    text-transform: uppercase;
+}
+.degree, .dates, .title, .host{
+    margin-left: 0.5rem;
+    color: var(--primary-dark);
+}
+.location, .dates, .host{
+    text-align: right;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.major, .minor {
+    color: var(--primary-color);
+    grid-area: auto/1/auto/3;
+    margin: 0 1rem;
+}
+.instructor{
+    color: var(--primary-color);
+    grid-area: 2/1/auto/3;
+    margin: 0 1rem;
+}
+.title, .name{
+    grid-area: 1/1/2/3;
+}
+.host, .location{
+    grid-area: 1/2/2/3;
+}
+.completed{
+    grid-area: 2/auto/2/3;
+    color: var(--primary-color);
+    justify-self: flex-end;
+}
+
+@media screen and (min-width: 950px) {
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .Education{
+        margin: 0.5rem auto;
+    }
+}

@@ -1,0 +1,68 @@
+.Technology{
+    width: 80%;
+    margin: 0 auto;
+}
+.tech{
+    box-sizing: border-box;
+    margin: 0.5rem auto;
+    /* width: 95%; */
+    /* max-width: 500px; */
+    border-radius: 40px;
+    min-height: 200px;
+    z-index: 10;
+}
+.codeArea{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 10fr 90fr;
+    background-color: white;
+    border: 1px solid var(--primary-light);
+    border-radius: 10px;
+}
+.techList{
+    padding: 1rem;
+    padding-left: 0;
+    font-family: 'Source Code Pro', monospace;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+.entry{
+    color: #cb0a0b;
+}
+.entryToggle{
+    display: block;
+    color: #cb0a0b;
+    font-style: normal;
+}
+.punctuation{
+    font-style: normal;
+    font-family: 'Source Code Pro', monospace;
+    color: black;
+}
+.toggleNum, .toggleLength{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: purple;
+    font-style: normal;
+}
+.toggleLength{
+    opacity: 50%;
+}
+.length{
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+    opacity: 100%;
+    color: blue;
+}
+.dropdown svg{
+    color: gray;
+    margin: 1rem;
+    transition: transform 150ms ease-in-out;
+}
+.dropdownToggle svg{
+    margin-bottom: 0;
+    transform: rotate(90deg);
+    transition: transform 150ms ease-in-out;
+}

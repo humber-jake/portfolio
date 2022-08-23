@@ -1,0 +1,90 @@
+.Projects{
+    margin: 0 auto;
+    width: 80%;
+    
+}
+.ProjectGallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+@media screen and (min-width: 800px) {
+    .ProjectGallery{
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .ProjectGallery{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+}
+
+.Project{
+    display: grid;
+    padding: 2rem;
+    margin: 1rem;
+    min-width: 200px;
+    min-height: 300px;
+    box-shadow: 3px 3px 25px #00000011, 2px 2px 2px #afd0ef20;
+    border-radius: 15px;
+    position: relative;
+    transition: all 150ms linear;
+}
+.Project:hover{
+    transform: translate(0px, -10px);
+    transition: all 150ms linear;
+    box-shadow: 3px 3px 25px #00000011, 2px 2px 2px #afd0ef20, 8px 8px 15px #00000033;
+}
+.ProjectName{
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+}
+.ProjectTech{
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-color);
+}
+.ProjectYear{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    color: var(--primary-light);
+}
+.ProjectThumbnail{
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid var(--primary-light);
+    border-radius: 10px;
+    width: 100%;
+    margin: 2rem auto;
+}
+.ProjectDescription{
+    color: var(--primary-dark);
+}
+.ProjectLink, .More{
+    display: flex;
+    text-decoration: none;
+    color: var(--primary-color);
+    justify-self: flex-end;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    transition: all 150ms linear;
+}
+.ProjectLink:hover, .More:hover{
+    opacity: 70%;
+    transition: all 150ms linear;
+}
+.More{
+    display: block;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: 0;
+    width: 100px;
+}

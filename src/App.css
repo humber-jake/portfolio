@@ -1,82 +1,146 @@
 :root{
     --primary-color: #4f89bc;
-    --primary-light: #dce8f3;
+    --primary-light: #afd0ef;
+    --primary-dark: #0b2d4b;
+    --primary-medium: #0067c1;
+    --secondary-color: #ffae00;
+    --secondary-light: #ffe69d;
+    --secondary-dark: #c26e00;
+    --tertiary-color: #e5179a;
 }
 
-.container{
+
+.header{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
     align-items: center;
     justify-content: center;
     margin: 0 auto 2rem auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes photo {
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(0px, -10px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
 }
 .photo{
-    width: 70%;
     max-width: 500px;
+    min-width: 300px;
     margin: 2rem auto 0 auto;
+    z-index: -1;
+    animation: photo 5000ms ease-in-out infinite;
 }
-.name{
-    color: var(--primary-color);
-    /* font-family: "Abril Fatface", serif; */
-    margin: 1rem auto;
-    text-align: center;
-    font-size: 2rem;
+.firstname, .lastname{
+    color: var(--primary-medium);
+    font-family: 'Bungee Shade', cursive;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 4rem;
+    line-height: 45px;
+    z-index: 10;
+}
+.firstname{
+    margin-right: auto;
+    margin-left: 0;
+    color: var(--primary-dark);
+    text-shadow: 0px 0px 9px #ffffff22;
 }
 .SectionTitle{
     margin-top: 0;
-    color: var(--primary-color);
-    /* font-family: "Abril Fatface", serif; */
-    font-size: 1.5rem;
+    color: var(--primary-dark);
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 3rem;
 }
 .byline{
-    color: var(--primary-color);
-    margin: auto;
+    color: var(--primary-dark);
+    margin: 30px auto 0 auto;
     font-size: 1rem;
 }
+
 .titleContainer{
+    /* position: absolute; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
     grid-row: 2/2;
     align-self: center;
     justify-self: center;
+    margin: 0 1rem;
+}
+.titleContainer::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: var(--primary-light);
+    height: 80px;
+    margin-top: 20px;
+    width: 120%;
+    outline: var(--primary-light) 10px solid;
+    outline-offset: 10px;
+    z-index: -10;
+    border-radius: 40px;
+}
+.body{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
 }
 .Section{
-    width: 90%;
-    margin: 1rem auto;
+    color: var(--primary-dark);
     min-height: 300px;
-    border: 2px solid var(--primary-light);
-    border-radius: 10px;
     box-sizing: border-box;
-    padding: 1rem;
 }
 .SectionContent{
     display: grid;
     grid-template-columns: 1fr;
 }
 
-@media screen and (min-width: 600px){
-    .Section{
-        width: 75%;
-    }
+@media screen and (min-width: 950px){
     .SectionContent{
         grid-template-columns: 1fr 1fr;
     }
-    .container{
+    .titleContainer::after{
+        width: 85%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .header{
         margin-top: 100px;
         grid-template-columns: 1fr 1fr;
         width: 80%;
-        margin-bottom: 200px;
+        overflow: visible;
+        margin-bottom: 0;
     }
     .photo{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
         width: 80%;
         margin: 1rem auto;
+    }
+    .SectionTitle{
+        font-size: 3rem;
+        margin-bottom: 20px;
     }
     .titleContainer{
         grid-row: 1/1;
         margin-top: 5rem;
         width: 80%;
     }
-    .name{
-        font-size: 3rem;
+    .firstname, .lastname{
+        margin-top: 50px;
+        font-size: 7rem;
+        line-height: 50px;
     }
     .byline{
         font-size: 1.5rem;

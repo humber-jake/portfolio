@@ -1,22 +1,35 @@
 import './App.css';
 import photo from './portfolio-circle.png'
-import Section from './Section.js';
+import Navbar from './Navbar.js'
+import resume from './resume';
+import Education from './Education.js';
+import Technology from './Technology.js'
+import Projects from './Projects';
+import {Routes, Route } from "react-router-dom"
 
 function App() {
 
   let body ='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolorum eligendi ipsa rem autem, omnis sapiente totam ex fugit? Repellat delectus deserunt veritatis eius iure excepturi quaerat, deleniti eos perspiciatis blanditiis. Similique officiis ab libero dolor iure, quisquam ut officia.'
 
+
   return (
     <div className="App">
-      <div className='container'>
+      <Navbar/>
+      <div className='header'>
         <div className='titleContainer'>
-          <div className='name'>Jacob Humber</div>
-          <div className='byline'>Please hire me so I can say I'm a web developer.</div>
+          <div className='firstname'>Jacob</div>
+          <div className='lastname'>Humber</div>
+          <div className='byline'>{resume.byline}</div>
         </div>
         <img className='photo' src={photo}/>
       </div>
-        <Section title='Projects' body={body}/> 
-        <Section title='Experience' body={body}/>
+      <div className='design'></div>
+      <div className="body">
+
+        <Technology content={resume.technology} />
+        {/* <Education content={resume.education} /> */}
+        <Projects projects={resume.projects} isHomePage={true}/>
+      </div>
     </div>
   );
 }
