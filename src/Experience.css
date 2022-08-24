@@ -1,0 +1,117 @@
+.Experience{
+    margin: 0 auto;
+    width: 90%;   
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.CompanyTitle{
+    width: 100%;
+    color: var(--primary-dark);
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-top: 1px solid var(--primary-light);
+}
+.container svg{
+    transform: rotate(90deg);
+    margin: 0 0.5rem;
+    color: var(--primary-color);
+    transition: all 250ms !important;
+}
+svg.collapsed{
+    transform: rotate(0deg);
+    transition: all 250ms;
+}
+.Buttons div{
+    text-align: center;
+    /* width: 100px; */
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    /* background-color: var(--primary-color); */
+    color: var(--primary-color);
+    border-radius: 10px;
+}
+.ExperiencePosition{
+    opacity: 100%;
+    max-height: 600px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    padding-bottom: 0.5rem;
+    z-index: -2;
+    transition: all 250ms;
+}
+.ExperiencePosition.collapsed{
+    opacity: 0%;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 250ms;
+}
+.ExperienceIcon, .ExperienceIconSpacer{
+    align-self: center;
+    justify-self: center;
+    margin: 0.5rem;
+    height: 25px;
+    width: 25px;
+    border: 5px solid var(--primary-light);
+    border-radius: 17.5px;
+    background-color: var(--primary-color);
+}
+.ExperienceIcon.stretch{
+    align-self: flex-start;
+    justify-self: center;
+    width: 5px;
+    height: 100%;
+    background-color: var(--primary-light);
+    border: none;
+    z-index: -10;
+}
+.ExperienceTitleContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0.5rem;
+    position: relative;
+}
+.ExperienceTitle{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+.ExperienceDates{
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.ExperiencePoints{
+    margin-left: 5px;
+    margin-bottom: 2rem;
+    color: var(--primary-dark);
+}
+.ExperiencePoint{
+    display: flex;
+    align-items: flex-start;
+    line-height: 25px;
+    margin-bottom: 0.5rem;
+}
+.ExperiencePoints svg{
+    justify-self: center;
+    align-self: flex-start;
+    margin-top: 3px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+@media screen and (min-width: 600px) {
+    .CompanyTitle{
+        font-size: 2.5rem;
+    }
+    .Experience{
+        width: 80%; 
+    }
+    .ExperiencePosition, .ExperiencePoints{
+        margin-left: 2rem;
+    }
+}

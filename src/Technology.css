@@ -19,6 +19,7 @@
     background-color: white;
     border: 1px solid var(--primary-light);
     border-radius: 10px;
+    transition: all 200ms;
 }
 .techList{
     padding: 1rem;

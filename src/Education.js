@@ -8,7 +8,8 @@ import Footer from './Footer';
 function Education(props) {
 
     const {isHomePage} = props;
-    const {university, courses} = props.content;
+    const {education} = props;
+    const {university, courses} = education;
 
     let allCourses = courses.map(course => <Course key={course.title} course={course}/>)
 

@@ -6,6 +6,7 @@ import Education from './Education.js';
 import Technology from './Technology.js'
 import Projects from './Projects';
 import Footer from './Footer';
+import Experience from './Experience';
 
 function App() {
 
@@ -28,7 +29,8 @@ function App() {
 
         <Technology content={resume.technology} />
         <Projects projects={resume.projects} isHomePage={true}/>
-        <Education content={resume.education} isHomePage={true}/>
+        <Experience experience={resume.experience} isHomePage={true}/>
+        <Education education={resume.education} isHomePage={true}/>
         <Footer/>
       </div>
     </div>

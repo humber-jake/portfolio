@@ -53,9 +53,9 @@ export default {
                     title: "Deployment Specialist",
                     dates: "Feb 2022 - Present",
                     points: [
-                        "I do client account setup",
-                        "This is bullet point number two",
-                        "There is no third bullet point.",
+                        "I do client account setup Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, iure?",
+                        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia maiores quae minus, suscipit quasi reprehenderit.",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio mollitia alias ut!",
                     ]
                 },
                 {

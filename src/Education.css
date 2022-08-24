@@ -17,11 +17,6 @@
         gap: 50px;
     }
 }
-.SubTitle{
-    color: var(--primary-dark);
-    font-family: 'Alumni Sans Pinstripe', sans-serif;
-    font-size: 2.5rem;
-}
 .UniversityName, .CourseHost{
     color: var(--primary-color);
     font-size: 1.5rem;

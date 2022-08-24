@@ -1,6 +1,7 @@
 :root{
     --primary-color: #4f89bc;
     --primary-light: #afd0ef;
+    --primary-lighter: #d9edff;
     --primary-dark: #0b2d4b;
     --primary-medium: #0067c1;
     --secondary-color: #ffae00;
@@ -8,8 +9,6 @@
     --secondary-dark: #c26e00;
     --tertiary-color: #e5179a;
 }
-
-
 .header{
     display: grid;
     grid-template-columns: 1fr;
@@ -68,6 +67,12 @@
     color: var(--primary-dark);
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     font-size: 3rem;
+    margin-bottom: 20px;
+}
+.SubTitle{
+    color: var(--primary-dark);
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 2.5rem;
 }
 .byline{
     color: var(--primary-dark);
