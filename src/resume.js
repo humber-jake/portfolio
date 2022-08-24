@@ -53,9 +53,9 @@ export default {
                     title: "Deployment Specialist",
                     dates: "Feb 2022 - Present",
                     points: [
-                        "I do client account setup Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, iure?",
-                        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia maiores quae minus, suscipit quasi reprehenderit.",
-                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio mollitia alias ut!",
+                        "Handle initial client account setup, including price-checking and configuring client and service preferences",
+                        "Use Salesforce to track contacts and configure account hierarchy to ensure accurate billing",
+                        "Conduct client facing demos of our different platforms, services and products when required",
                     ]
                 },
                 {

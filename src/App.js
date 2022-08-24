@@ -7,6 +7,10 @@ import Technology from './Technology.js'
 import Projects from './Projects';
 import Footer from './Footer';
 import Experience from './Experience';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 function App() {
 
