@@ -1,4 +1,4 @@
-export default {
+const resume = {
     name: 'Jacob Humber',
     byline: 'A self-taught developer with a background in communications and extensive experience in the restaurant industry.',
     technology: [
@@ -211,3 +211,5 @@ export default {
         "French"
     ]
 }
+
+export default resume;

@@ -3,7 +3,7 @@ import ComputerIcon from '@mui/icons-material/Computer';
 
 function Course(props) {
 
-    const {title, instructor, host, completed, hours} = props.course;
+    const {title, instructor, host, completed } = props.course;
 
     return (
         <div className='Learning'>

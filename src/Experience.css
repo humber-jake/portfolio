@@ -26,10 +26,8 @@ svg.collapsed{
 }
 .Buttons div{
     text-align: center;
-    /* width: 100px; */
     padding: 0.5rem 1rem;
     margin: 0.5rem;
-    /* background-color: var(--primary-color); */
     color: var(--primary-color);
     border-radius: 10px;
 }
