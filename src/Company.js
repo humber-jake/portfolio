@@ -22,7 +22,7 @@ function Company(props, ref) {
 
     useImperativeHandle(ref, () => {
         return {toggleCollapsed: toggleCollapsed, collapse: collapse, expand: expand}
-    }, [])
+    })
 
     return (
         <div key={company.name} className='ExperienceCompany'>
