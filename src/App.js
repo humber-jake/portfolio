@@ -17,10 +17,13 @@ function App() {
           <div className='firstname'>Jacob</div>
           <div className='lastname'>Humber</div>
           <div className='byline'>{resume.byline}</div>
+          <div className='bgcontainer'>
+            <div className="bgelementborder"/>
+            <div className='bgelement'/>
+          </div>
         </div>
         <img className='photo' src={photo} alt=''/>
       </div>
-      <div className='design'></div>
       <div className="body">
 
         <Technology content={resume.technology} />
