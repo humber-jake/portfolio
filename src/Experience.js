@@ -18,8 +18,6 @@ function Experience(props) {
         collapseRefs[i] = createRef()
     }
 
-    console.log(collapseRefs)
-
     let body = experience.map((company, i) =>
         <Company key={i} ref={collapseRefs[i]} i={i} company={company}/>
     )
