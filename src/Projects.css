@@ -36,6 +36,12 @@
     transition: all 150ms linear;
     box-shadow: 3px 3px 25px #00000011, 2px 2px 2px #afd0ef20, 8px 8px 15px #00000033;
 }
+.Project svg{
+    color: var(--primary-color);
+    justify-self: flex-end;
+    align-self: flex-end;
+    font-size: 1.5rem;
+}
 .ProjectName{
     font-family: "Alumni Sans Pinstripe", sans-serif;
     font-size: 2.5rem;
@@ -44,6 +50,7 @@
 .ProjectTech{
     font-family: "Roboto", sans-serif;
     color: var(--primary-color);
+    font-size: 1rem;
 }
 .ProjectYear{
     position: absolute;
@@ -65,8 +72,9 @@
 }
 .ProjectDescription{
     color: var(--primary-dark);
+    font-size: 1rem;
 }
-.ProjectLink, .More{
+.More{
     display: flex;
     text-decoration: none;
     color: var(--primary-color);
@@ -75,6 +83,11 @@
     align-items: center;
     justify-content: center;
     transition: all 150ms linear;
+}
+.ProjectLink{
+    display: inherit;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 .ProjectLink:hover, .More:hover{
     opacity: 70%;

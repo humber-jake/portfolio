@@ -20,7 +20,8 @@
 .UniversityName, .CourseHost{
     color: var(--primary-color);
     font-size: 1.5rem;
-    justify-self: center;
+    margin: 0 auto;
+    text-align: center;
 }
 .UniversityLocation{
     justify-self: center;
@@ -44,6 +45,7 @@
 .UniversityMajor, .UniversityMinor, .CourseCompleted{
     color: var(--primary-dark);
     justify-self: center;
+    text-align: center;
 }
 .University, .Courses{
         display: grid;
