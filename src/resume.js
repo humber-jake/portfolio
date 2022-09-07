@@ -171,7 +171,7 @@ const resume = {
             ],
             year: "2022",
             description: "A utility for creating color palettes. This project was adapted from The Modern React Bootcamp and rewritten using hooks instead of class components.",
-            link: ''
+            link: 'https://heartfelt-ganache-64105d.netlify.app/'
         },
         {
             name: "Liar's Dice",
