@@ -5,6 +5,7 @@ const resume = {
         'HTML5',
         'CSS3',
         'JavaScript',
+        'jQuery',
         'React',
         'JSS',
         'MUI',
@@ -172,6 +173,17 @@ const resume = {
             year: "2022",
             description: "A utility for creating color palettes. This project was adapted from The Modern React Bootcamp and rewritten using hooks instead of class components.",
             link: 'https://heartfelt-ganache-64105d.netlify.app/'
+        },
+        {
+            name: "This Website!",
+            tech: [
+                'React',
+                'React Router',
+                'MUI',
+            ],
+            year: "2022",
+            description: "Check out my code to see how I built this portfolio website. All content is dynamically rendered with react components from a single resume.js file, for ease of updating.",
+            link: 'https://jhumber.com'
         },
         {
             name: "Liar's Dice",
