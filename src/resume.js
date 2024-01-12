@@ -11,6 +11,7 @@ const resume = {
         'MUI',
         'Node JS',
         'Express',
+        'SQL',
         'MongoDB',
         'Bootstrap',
         'Socket.io',
