@@ -1,0 +1,11 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  }
+}
