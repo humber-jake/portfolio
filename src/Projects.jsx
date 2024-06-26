@@ -16,7 +16,7 @@ const Projects = (props) => {
   ));
   return (
     <div>
-      <h1>Projects</h1>
+      <div className="sectionTitle">Projects</div>
       {projmap}
     </div>
   );

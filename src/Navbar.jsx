@@ -6,13 +6,15 @@ const Navbar = (props) => {
   const links = Object.keys(resume);
 
   const navLinks = links.map((link) => {
-    return <div>{link}</div>;
+    return <div className="NavLink">{link}</div>;
   });
 
   return (
     <div className="Navbar">
-      <div className="Name">{resume.name}</div>
-      <div className="NavLinks">{navLinks.slice(3, 6)}</div>
+      <div className="NavbarElements">
+        <div className="Name">{resume.name}</div>
+        <div className="NavLinks">{navLinks.slice(4, 7)}</div>
+      </div>
     </div>
   );
 };

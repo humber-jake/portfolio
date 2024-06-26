@@ -12,7 +12,7 @@ const Education = (props) => {
 
   return (
     <div className="Education">
-      <h1>Education</h1>
+      <div className="sectionTitle">Education</div>
       <University university={university} />
       <div className="subTitle">Auxiliary Courses</div>
       {allCourses}

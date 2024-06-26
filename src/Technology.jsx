@@ -14,7 +14,7 @@ const Technology = (props) => {
   return (
     <div className="Technology">
       <div className="sectionTitle">Technology</div>
-      <div className="TechList">{tech.join(', ')}.</div>
+      <div className="Techlist">{tech.join(', ')}.</div>
     </div>
   );
 };

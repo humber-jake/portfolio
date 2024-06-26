@@ -11,7 +11,7 @@ const Experience = (props) => {
   return (
     <>
       <div className="Experience">
-        <h1>Experience</h1>
+        <div className="sectionTitle">Experience</div>
         {body}
       </div>
     </>

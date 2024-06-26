@@ -1,7 +1,8 @@
 const resume = {
   name: 'Jacob Humber',
+  greeting: "Hi! I'm Jake.",
   byline:
-    "Hi! I'm Jake. I'm a self-taught developer and ex-chef with a BA in English Literature and experience in communications and employment services. Welcome to my portfolio. Feel free to look around.",
+    "I'm a self-taught developer and ex-chef with a BA in English Literature and experience in communications and employment services. Welcome to my portfolio. Feel free to look around.",
   technology: [
     'HTML & CSS',
     'JavaScript',
