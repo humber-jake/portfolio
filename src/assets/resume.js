@@ -1,7 +1,7 @@
 const resume = {
   name: 'Jacob Humber',
   byline:
-    'A self-taught developer with a background in communications and extensive experience in the restaurant industry.',
+    "Hi! I'm Jake. I'm a self-taught developer and ex-chef with a BA in English Literature and experience in communications and employment services. Welcome to my portfolio. Feel free to look around.",
   technology: [
     'HTML & CSS',
     'JavaScript',
@@ -176,7 +176,7 @@ const resume = {
       year: '2021',
       description:
         'A Jackbox-style online multiplayer version of the classic dice game.',
-      link: 'http://agile-anchorage-27851.herokuapp.com/',
+      link: 'https://liars-dice.adaptable.app/',
     },
     {
       name: 'Password Generator',
@@ -186,14 +186,14 @@ const resume = {
         'A simple password generator created as a utility to generate one time temporary passwords.',
       link: 'https://serene-beach-45005.herokuapp.com/',
     },
-    {
-      name: 'Blackbox Generator',
-      tech: ['Node.js', 'Express', 'MongoDB', 'Materialize.css'],
-      year: '2020',
-      description:
-        'A nonsensical REST API for generating blackbox cooking challenge ingredients.',
-      link: 'https://polar-savannah-96642.herokuapp.com/',
-    },
+    // {
+    //   name: 'Blackbox Generator',
+    //   tech: ['Node.js', 'Express', 'MongoDB', 'Materialize.css'],
+    //   year: '2020',
+    //   description:
+    //     'A nonsensical REST API for generating blackbox cooking challenge ingredients.',
+    //   link: 'https://polar-savannah-96642.herokuapp.com/',
+    // },
   ],
   languages: ['English', 'French'],
 };

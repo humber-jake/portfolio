@@ -1,18 +1,18 @@
 import React from 'react';
 
 const Navbar = (props) => {
-  const { name } = props;
+  const { resume } = props;
+
+  const links = Object.keys(resume);
+
+  const navLinks = links.map((link) => {
+    return <div>{link}</div>;
+  });
+
   return (
-    <div>
-      <div className="Navbar">
-        <div className="Name">{name}</div>
-        <div className="NavLinks">
-          <span>Technology</span>
-          <span>Education</span>
-          <span>Projects</span>
-          <span>Experience</span>
-        </div>
-      </div>
+    <div className="Navbar">
+      <div className="Name">{resume.name}</div>
+      <div className="NavLinks">{navLinks.slice(3, 6)}</div>
     </div>
   );
 };
