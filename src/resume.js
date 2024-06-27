@@ -13,6 +13,7 @@ const resume = {
     'Node JS',
     'Express',
     'MongoDB',
+    'SQL',
     'Bootstrap',
     'Socket.io',
     'Git',
@@ -50,7 +51,7 @@ const resume = {
       position: [
         {
           title: 'Deployment Specialist',
-          dates: 'Feb 2022 - Present',
+          dates: 'Feb 2022 - March 2024',
           points: [
             'Handle initial client account setup, including price-checking and configuring client and service preferences',
             'Use Salesforce to track contacts and configure account hierarchy to ensure accurate billing',
@@ -179,7 +180,7 @@ const resume = {
       year: '2021',
       description:
         'A Jackbox-style online multiplayer version of the classic dice game.',
-      link: 'http://agile-anchorage-27851.herokuapp.com/',
+      link: 'https://liars-dice.adaptable.app/',
     },
     {
       name: 'Password Generator',
@@ -189,14 +190,14 @@ const resume = {
         'A simple password generator created as a utility to generate one time temporary passwords.',
       link: 'https://effervescent-dragon-7c3117.netlify.app/',
     },
-    {
-      name: 'Blackbox Generator',
-      tech: ['Node.js', 'Express', 'MongoDB', 'Materialize.css'],
-      year: '2020',
-      description:
-        'A nonsensical REST API for generating blackbox cooking challenge ingredients.',
-      link: 'https://polar-savannah-96642.herokuapp.com/',
-    },
+    // {
+    //   name: 'Blackbox Generator',
+    //   tech: ['Node.js', 'Express', 'MongoDB', 'Materialize.css'],
+    //   year: '2020',
+    //   description:
+    //     'A nonsensical REST API for generating blackbox cooking challenge ingredients.',
+    //   link: 'https://polar-savannah-96642.herokuapp.com/',
+    // },
   ],
   languages: ['English', 'French'],
 };
