@@ -6,25 +6,26 @@ import Education from './Education';
 import Projects from './Projects';
 import Experience from './Experience';
 import Navbar from './Navbar';
-import Divider from './Divider';
+import BackgroundDoodles from './BackgroundDoodles';
 
 function App() {
   return (
     <>
+      <div className="BackgroundAnimation"></div>
       <Navbar resume={resume} />
       <div className="wrapper">
+        <BackgroundDoodles />
         <div className="Hero">
-          <div className="HeroText">
-            <div className="profile">
+          <div className="profile">
+            <div className="HeroText">
               <div className="greeting">{resume.greeting}</div>
               <div className="byline">{resume.byline}</div>
             </div>
-            <Technology content={resume.technology} />
+            <img src={portfolioPicture} className="headshot" alt="" />
           </div>
-          <img src={portfolioPicture} className="headshot" alt="" />
+          <Technology content={resume.technology} />
         </div>
       </div>
-      <Divider />
       <div className="wrapperbody">
         <div className="body">
           <Education education={resume.education} />

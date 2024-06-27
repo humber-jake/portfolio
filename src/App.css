@@ -1,126 +1,115 @@
 .Name {
   font-family: 'Abril Fatface';
-  width: 60%;
   text-align: left;
-  font-size: 3rem;
-  margin: 0.5rem 0;
+  font-size: 2rem;
+  margin: 0 2rem;
 }
 .Navbar {
-  background-image: url('./assets/morphing-diamonds.svg');
+  background-image: url('/src/assets/morphing-diamonds.svg');
   border-top: 30px solid black;
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
-  height: 11.5vh;
+  height: 70px;
 }
 .NavbarElements {
   box-sizing: border-box;
-  margin: 0 15%;
-  padding: 0 5%;
+  width: 80rem;
+  margin: 0 auto;
   background: white;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .NavLinks {
-  font-size: 1.5rem;
-  width: 40%;
+  font-size: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 .NavLink {
-  background-image: linear-gradient(120deg, #4acc0c 0%, #6befbe 100%);
+  font-family: monospace;
+  /* background-image: linear-gradient(120deg, #4acc0c 0%, #6befbe 100%); */
+  background-image: linear-gradient(120deg, #5cdf7d 0%, #5cdf7d 100%);
   background-repeat: no-repeat;
-  background-size: 100% 0.25em;
-  background-position: 0 89%;
+  background-size: 100% 0.5em;
+  background-position: 0 100%;
   transition: background-size 0.2s ease-in;
   padding: 0 1rem;
+  margin: 0 1rem;
 }
 .NavLink:hover {
-  background-size: 100% 89%;
-  /* padding-top: 3px; */
+  background-size: 100% 80%;
+  background-position: 0 80%;
+  padding: 0.75rem 1rem;
   transition: 200ms;
 }
 .wrapper {
-  background-image: url('./assets/bauhausbg.svg');
+  background: #5cdf7d;
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
-  padding: 0 15%;
-}
-.wrapperbody {
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 15%;
+  /* PLACEHOLDER DIVIDER */
+  border-bottom: 100px solid black;
 }
 .Hero {
-  background: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 100px;
-  height: 89.5vh;
-  box-sizing: border-box;
-}
-.HeroText {
-  box-sizing: border-box;
-  width: 46%;
-  height: 400px;
+  height: 750px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 60px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 .profile {
-  max-width: 80%;
-  background-image: linear-gradient(120deg, #caffb1 0%, #d4ffef 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 6.5em;
-  background-position: 0 100%;
-  transition: background-size 0.2s ease-in;
-  padding: 1rem;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1%;
 }
-.headshot {
-  transform: scaleX(97%);
-  max-height: 90%;
-  max-width: 44%;
-  border-radius: 100px;
-}
-.QuoteLeft,
-.QuoteRight {
-  width: 80px;
-  opacity: 20%;
+.HeroText {
+  height: 435px;
+  margin: 0 1rem;
+  margin-top: 63px;
+  border-radius: 50px;
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .greeting {
+  font-family: monospace;
   text-align: left;
   font-size: 3rem;
 }
 .byline {
   text-align: left;
 }
+.headshot {
+  margin-top: 63px;
+  height: fit-content;
+  transform: scaleX(97%);
+  width: 380px;
+  border-radius: 100px;
+}
 .Technology {
-  text-align: right;
-  background-image: linear-gradient(120deg, #fde8ff 0%, #eaf0ff 100%);
-  background-repeat: no-repeat;
-  background-size: 95% 3.5em;
-  background-position: 30% 90%;
-  padding: 1rem;
+  margin: 2rem 5rem 2rem 0;
+  width: 35%;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background: white;
+
+  /* background-image: linear-gradient(120deg, #fde8ff 0%, #eaf0ff 100%); */
+  /* padding: 1rem; */
 }
 .sectionTitle {
-  margin: 0rem 2rem 1rem 0rem;
-  font-size: 2rem;
+  /* margin: 0rem 2rem 1rem 0rem; */
+  font-size: 1.5rem;
 }
 .Techlist {
-  text-align: center;
-  border-radius: 10px;
-  padding: 1rem;
-  border: 1px solid rgb(237, 237, 237);
 }
 .body {
   background: white;

@@ -1,0 +1,26 @@
+.BackgroundDoodles {
+  svg {
+    position: absolute;
+  }
+}
+.Arrow1 {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  width: 100px;
+}
+.Arrow2 {
+  transform: rotate(10deg);
+  position: absolute;
+  top: 49%;
+  left: 47.5%;
+  width: 170px;
+}
+.Underline {
+  transform: rotate(-4deg);
+  position: absolute;
+  top: 33.2%;
+  left: 41%;
+  width: 100px;
+}
