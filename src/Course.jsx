@@ -6,10 +6,11 @@ function Course(props) {
 
   return (
     <div className="Learning">
-      <div className="CourseHost">{host}</div>
-      <div className="CourseTitle">{title}</div>
-      <div className="CourseInstructor">{instructor}</div>
-      <div className="CourseCompleted">{completed}</div>
+      <div className="name">{title}</div>
+      <div className="">by {instructor}</div>
+      <div className="location">
+        {host}, <span className="dates">{completed}</span>
+      </div>
     </div>
   );
 }

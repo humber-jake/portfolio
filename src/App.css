@@ -4,17 +4,40 @@
   font-size: 2rem;
   margin: 0 2rem;
 }
+.SocialMediaBookmarks {
+  height: 40px;
+  background: #1f2832;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    svg {
+      margin: 0 1rem;
+    }
+  }
+}
+.container {
+  display: inherit;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80rem;
+  margin: 0 auto;
+}
 .Navbar {
   background-image: url('/src/assets/morphing-diamonds.svg');
-  border-top: 30px solid black;
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
-  height: 70px;
 }
 .NavbarElements {
   box-sizing: border-box;
-  width: 80rem;
+  /* width: 80rem; */
   margin: 0 auto;
   background: white;
   display: flex;
@@ -53,10 +76,8 @@
   margin: 0 auto;
   width: 100%;
   /* PLACEHOLDER DIVIDER */
-  border-bottom: 100px solid black;
 }
 .Hero {
-  height: 750px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,16 +85,13 @@
   box-sizing: border-box;
 }
 .profile {
-  height: 600px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1%;
+  padding: 3rem;
 }
 .HeroText {
-  height: 435px;
   margin: 0 1rem;
-  margin-top: 63px;
   border-radius: 50px;
   width: 29%;
   display: flex;
@@ -89,18 +107,17 @@
   text-align: left;
 }
 .headshot {
-  margin-top: 63px;
   height: fit-content;
-  transform: scaleX(97%);
-  width: 380px;
-  border-radius: 100px;
+  width: 450px;
+  border-radius: 100px 0 100px 100px;
 }
 .Technology {
-  margin: 2rem 5rem 2rem 0;
+  margin: 0 2rem 4rem 2rem;
   width: 35%;
   padding: 1rem 2rem;
   border-radius: 50px;
   background: white;
+  margin-top: 0;
 
   /* background-image: linear-gradient(120deg, #fde8ff 0%, #eaf0ff 100%); */
   /* padding: 1rem; */
@@ -109,8 +126,26 @@
   /* margin: 0rem 2rem 1rem 0rem; */
   font-size: 1.5rem;
 }
-.Techlist {
+.sectionTitleLarge {
+  font-size: 3rem;
+  /* margin: auto; */
+}
+.ProjectsTitle {
+  font-size: 3rem;
+  text-align: right;
+}
+.Education {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.divider {
+  height: 40px;
+  width: 100%;
+  margin: 2rem auto;
+  background-image: url(./assets/morphing-diamonds.svg);
 }
 .body {
-  background: white;
+  margin-top: 3rem;
 }

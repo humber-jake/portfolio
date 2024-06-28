@@ -1,6 +1,5 @@
 import React from 'react';
 import Course from './Course';
-import University from './University';
 
 const Education = (props) => {
   const { education } = props;
@@ -10,12 +9,26 @@ const Education = (props) => {
     <Course key={course.title} course={course} />
   ));
 
+  // for (let i = allCourses.length; i > 0; i--) {
+  //   allCourses.splice(i, 0, <div></div>);
+  // }
+
   return (
     <div className="Education">
-      <div className="sectionTitle">Education</div>
-      <University university={university} />
-      <div className="subTitle">Auxiliary Courses</div>
-      {allCourses}
+      <div className="sectionTitleLarge">Education</div>
+      <div className="EducationSection">
+        <div className="University">
+          <div className="degree">{university.degree}</div>
+          <div className="name">{university.name}</div>
+          <div className="location">
+            {university.location},{' '}
+            <span className="dates">{university.dates}</span>
+          </div>
+          <div className="major">Major {university.major}</div>
+          <div className="minor">Minor {university.minor}</div>
+        </div>
+        {allCourses}
+      </div>
     </div>
   );
 };

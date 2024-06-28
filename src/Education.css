@@ -1,14 +1,27 @@
-.Learning {
-  margin-bottom: 20px;
+.degree {
+  font-size: 2rem;
 }
-.UniversityLocation {
-  color: rgb(161, 163, 173);
+.name {
+  font-size: 1.5rem;
 }
-.CourseHost {
+.location {
+  color: lightgrey;
 }
-.CourseTitle {
+.dates {
+  margin: 0 auto;
+  color: lightgrey;
 }
-.CourseInstructor {
+.Education {
+  background-image: url(./assets/Education.svg);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-position: 20% 40%;
+  background-size: 30%;
 }
-.CourseCompleted {
+.EducationSection {
+  /* margin: 2rem; */
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: 1fr 1fr; */
+  row-gap: 2rem;
 }

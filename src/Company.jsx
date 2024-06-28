@@ -1,27 +1,30 @@
 import React from 'react';
+import './Experience.css';
 
 const Company = (props) => {
-  const { company } = props;
+  const { company, isHomePage } = props;
   return (
-    <div>
+    <>
       {company.position.map((pos, i) => (
-        <div key={pos.title}>
-          <div className={`ExperienceIcon`}></div>
-          <div className="ExperienceTitleContainer">
-            <div className="ExperienceTitle">{pos.title}</div>
-            <div className="ExperienceDates">{pos.dates}</div>
-          </div>
-          <div className="ExperiencePoints">
-            {pos.points.map((point, i) => (
-              <div key={i} className="ExperiencePoint">
-                {`->`}
-                {point}
-              </div>
-            ))}
-          </div>
+        <div key={pos.title} className="ExperienceCard">
+          <div className="ExperienceTitle">{pos.title}</div>
+          <div className="Company">{company.name}</div>
+          <div className="ExperienceDates">{pos.dates}</div>
+          {isHomePage ? (
+            <></>
+          ) : (
+            <div className="ExperiencePoints">
+              {pos.points.map((point, i) => (
+                <div key={i} className="ExperiencePoint">
+                  {`•`}
+                  {point}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

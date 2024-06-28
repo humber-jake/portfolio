@@ -1,24 +1,23 @@
 import React from 'react';
 import Project from './Project';
+import './Projects.css';
 
 const Projects = (props) => {
   let { projects, isHomePage } = props;
 
-  let projmap = projects.map((p) => (
-    <Project
-      key={p.name}
-      name={p.name}
-      tech={p.tech}
-      year={p.year}
-      description={p.description}
-      link={p.link}
-    />
-  ));
+  let allProjects = projects.map((project) => {
+    return <Project key={project.name} project={project} />;
+  });
+
   return (
-    <div>
-      <div className="sectionTitle">Projects</div>
-      {projmap}
-    </div>
+    <>
+      <div className="Projects">
+        <div className="ProjectsTitle">Projects</div>
+        <div className="ProjectsSection">
+          {isHomePage ? allProjects.splice(0, 3) : allProjects}
+        </div>
+      </div>
+    </>
   );
 };
 

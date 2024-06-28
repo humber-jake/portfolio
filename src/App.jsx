@@ -6,15 +6,15 @@ import Education from './Education';
 import Projects from './Projects';
 import Experience from './Experience';
 import Navbar from './Navbar';
-import BackgroundDoodles from './BackgroundDoodles';
+import SocialMediaBookmarks from './SocialMediaBookmarks';
 
 function App() {
   return (
     <>
       <div className="BackgroundAnimation"></div>
+      <SocialMediaBookmarks socials={resume.socialmedia} />
       <Navbar resume={resume} />
       <div className="wrapper">
-        <BackgroundDoodles />
         <div className="Hero">
           <div className="profile">
             <div className="HeroText">
@@ -26,11 +26,17 @@ function App() {
           <Technology content={resume.technology} />
         </div>
       </div>
-      <div className="wrapperbody">
-        <div className="body">
+      <div className="body">
+        <div className="container">
           <Education education={resume.education} />
-          <Projects projects={resume.projects} />
-          <Experience experience={resume.experience} />
+        </div>
+        <div className="divider"></div>
+        <div className="container">
+          <Projects projects={resume.projects} isHomePage={true} />
+        </div>
+        <div className="divider"></div>
+        <div className="container">
+          <Experience experience={resume.experience} isHomePage={true} />
         </div>
       </div>
     </>

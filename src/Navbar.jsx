@@ -5,15 +5,21 @@ const Navbar = (props) => {
 
   const links = Object.keys(resume);
 
-  const navLinks = links.map((link) => {
-    return <div className="NavLink">{link}</div>;
+  const navLinks = links.map((link, index) => {
+    return (
+      <div className="NavLink" key={index}>
+        {link}
+      </div>
+    );
   });
 
   return (
     <div className="Navbar">
-      <div className="NavbarElements">
-        <div className="Name">{resume.name}</div>
-        <div className="NavLinks">{navLinks.slice(4, 7)}</div>
+      <div className="container">
+        <div className="NavbarElements">
+          <div className="Name">{resume.website}</div>
+          <div className="NavLinks">{navLinks.slice(5, 8)}</div>
+        </div>
       </div>
     </div>
   );
