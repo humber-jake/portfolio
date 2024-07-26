@@ -35,22 +35,22 @@
 }
 .ProjectCard {
   width: 400px;
-  border: 1px solid lightgrey;
+  border: 3px solid transparent;
   margin: 1rem;
   padding: 2rem;
   border-radius: 20px;
-  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.05), 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.02), 1px 1px 1px rgba(0, 0, 0, 0.05);
   background: white;
   transition: 200ms;
 }
 .ProjectCard:hover {
-  opacity: 80%;
-  transform: translateY(-10px);
+  /* opacity: 80%; */
+  /* transform: translateY(-10px); */
   transition: 200ms;
   transition-timing-function: ease-in;
-  border-color: lightblue;
-  box-shadow: 3px 3px 30px rgba(122, 184, 255, 0.41),
-    1px 1px 1px rgba(65, 192, 255, 0.385);
+  border: 3px solid rgb(233, 233, 233);
+  /* box-shadow: 3px 3px 25px rgba(122, 184, 255, 0.3),
+    1px 1px 1px rgba(65, 192, 255, 0.385); */
 }
 .ProjectName {
   font-size: 1.5rem;

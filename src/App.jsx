@@ -6,13 +6,12 @@ import Education from './Education';
 import Projects from './Projects';
 import Experience from './Experience';
 import Navbar from './Navbar';
-import SocialMediaBookmarks from './SocialMediaBookmarks';
+import Footer from './assets/Footer';
 
 function App() {
   return (
     <>
       <div className="BackgroundAnimation"></div>
-      <SocialMediaBookmarks socials={resume.socialmedia} />
       <Navbar resume={resume} />
       <div className="wrapper">
         <div className="Hero">
@@ -30,15 +29,16 @@ function App() {
         <div className="container">
           <Education education={resume.education} />
         </div>
-        <div className="divider"></div>
+        {/* <div className="divider"></div> */}
         <div className="container">
           <Projects projects={resume.projects} isHomePage={true} />
         </div>
-        <div className="divider"></div>
+        {/* <div className="divider"></div> */}
         <div className="container">
           <Experience experience={resume.experience} isHomePage={true} />
         </div>
       </div>
+      <Footer resume={resume} />
     </>
   );
 }

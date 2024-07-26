@@ -4,8 +4,6 @@ import './Projects.css';
 const Project = (props) => {
   const { name, tech, year, description, link } = props.project;
 
-  console.log(props);
-
   return (
     <div className="ProjectCard">
       <div className="ProjectName">{name}</div>

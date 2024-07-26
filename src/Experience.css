@@ -4,39 +4,54 @@
   grid-template-rows: 1fr 1fr 1fr;
   grid-auto-flow: column;
   grid-area: span;
-  background-image: url(/src/assets/treasuremap.svg);
+  background-image: url(/src/assets/expbg2.png);
   background-repeat: no-repeat;
-  background-position: 49% 28%;
-  background-size: contain;
+  background-position: 52% 45%;
+  background-size: 65%;
 }
 .ExperienceCard {
   margin: 1rem auto;
   padding: 1.25rem;
   width: 250px;
   height: 120px;
-  border: 4px solid #323232;
+  /* border: 4px solid #323232; */
   border-radius: 20px;
   text-align: center;
   text-wrap: balance;
   align-content: space-around;
-  background: rgb(244, 148, 148);
+  background: #d1c0ff;
   opacity: 80%;
   transition: 200ms;
+  position: relative;
 }
+/* .ExperienceCard::before {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  top: 45%;
+  left: 45%;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: black;
+  opacity: 40%;
+} */
+
 .ExperienceCard:hover {
   opacity: 100%;
   transition: 200ms;
 }
-.ExperienceTitle {
+.PositionTitle {
   font-size: 1.25rem;
+}
+.ExperienceTitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 4rem;
 }
 .Company {
   font-size: 1rem;
 }
 .ExperienceDates {
   color: rgb(99, 99, 99);
-}
-.ExperiencePoints {
-}
-.ExperiencePoint {
 }

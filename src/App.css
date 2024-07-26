@@ -130,10 +130,7 @@
   font-size: 3rem;
   /* margin: auto; */
 }
-.ProjectsTitle {
-  font-size: 3rem;
-  text-align: right;
-}
+
 .Education {
   display: flex;
   justify-content: space-evenly;
@@ -148,4 +145,19 @@
 }
 .body {
   margin-top: 3rem;
+}
+.Footer {
+  display: grid;
+  color: white;
+  margin-top: 100px;
+  padding: 3rem;
+  height: 300px;
+  width: 100%;
+  background: #1f2832;
+
+  div {
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }

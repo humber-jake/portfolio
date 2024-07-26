@@ -3,7 +3,7 @@ const resume = {
   website: 'jhumber.com',
   greeting: "Hi! I'm Jake.",
   byline:
-    "I'm a self-taught developer with a BA in English Literature and background in communications and employment services. Welcome to my portfolio! Feel free to look around.",
+    "I'm a self-taught developer with a BA in English Literature and background in communications, employment services, and the restaurant industry. Welcome to my portfolio! Feel free to look around.",
   technology: [
     'HTML & CSS',
     'JavaScript',
