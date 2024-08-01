@@ -16,6 +16,11 @@
   text-align: right;
   margin-right: 15%;
 }
+.FullProjectsTitle {
+  font-size: 3rem;
+  text-align: center;
+  margin: 3rem;
+}
 .Projects {
   background-image: url(./assets/Projects.svg);
   background-repeat: no-repeat;
@@ -54,4 +59,61 @@
 }
 .ProjectName {
   font-size: 1.5rem;
+}
+
+.ProjectSlide {
+  padding: 3rem;
+  margin: 3rem;
+  border-radius: 50px;
+  width: 75%;
+  .ProjectName {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    border-bottom: 1px solid rgb(237, 237, 237);
+  }
+  .ProjectBody {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+    .ProjectLeft {
+      max-width: 800px;
+      .ProjectThumbnail {
+        box-sizing: border-box;
+        margin: 0;
+      }
+    }
+    .ProjectRight {
+      height: 100%;
+      margin: 0 auto;
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      * {
+        margin: 1rem 0;
+      }
+      .ProjectTech {
+        font-size: 1.25rem;
+        color: #afafaf;
+      }
+      .ProjectLink {
+        color: lightskyblue;
+        text-align: right;
+      }
+      .ProjectLink:hover {
+        color: lightskyblue;
+        opacity: 60%;
+      }
+    }
+  }
+}
+.FullProjects {
+  display: flex;
+  flex-direction: column;
+  .ProjectCard {
+    width: 60%;
+  }
 }

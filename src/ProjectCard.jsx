@@ -5,7 +5,7 @@ const Project = (props) => {
   const { name, tech, year, description, link } = props.project;
 
   return (
-    <div className="ProjectCard">
+    <a className="ProjectLink ProjectCard" href={link}>
       <div className="ProjectName">{name}</div>
       <div className="ProjectTech">{tech.join(', ')}</div>
       <img
@@ -14,8 +14,7 @@ const Project = (props) => {
         alt=""
       ></img>
       <div className="ProjectDescription">{description}</div>
-      <div className="ProjectLink">{link}</div>
-    </div>
+    </a>
   );
 };
 

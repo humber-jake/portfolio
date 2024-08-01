@@ -1,6 +1,8 @@
 import React from 'react';
 import Company from './Company';
 import './Experience.css';
+import { Link } from 'react-router-dom';
+
 const Experience = (props) => {
   const { experience, isHomePage } = props;
 
@@ -26,6 +28,11 @@ const Experience = (props) => {
       <div className={isHomePage ? 'Experience' : 'FullExperience container'}>
         {body}
       </div>
+      {isHomePage && (
+        <Link className="More" to="/experience">
+          More...
+        </Link>
+      )}
     </>
   );
 };
