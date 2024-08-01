@@ -23,7 +23,9 @@ const Experience = (props) => {
   return (
     <>
       <div className="ExperienceTitle">Work Experience</div>
-      <div className="Experience">{body}</div>
+      <div className={isHomePage ? 'Experience' : 'FullExperience container'}>
+        {body}
+      </div>
     </>
   );
 };

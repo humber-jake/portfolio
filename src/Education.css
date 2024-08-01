@@ -17,6 +17,11 @@
   background-clip: content-box;
   background-position: 20% 40%;
   background-size: 30%;
+  margin: 3rem;
+}
+.FullEducation {
+  height: 70vh;
+  margin: 3rem auto;
 }
 .EducationSection {
   /* margin: 2rem; */

@@ -126,7 +126,7 @@ const resume = {
       ],
     },
     {
-      name: 'Narcity Media',
+      name: 'Narcity Media (MTLblog)',
       position: [
         {
           title: 'Sponsored Content Creator (Freelance)',
@@ -138,7 +138,7 @@ const resume = {
       ],
     },
     {
-      name: 'Rhino Media',
+      name: 'Rhino Media (YUL.buzz)',
       position: [
         {
           title: 'Contributor/Editor (Freelance)',

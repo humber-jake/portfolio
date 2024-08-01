@@ -2,6 +2,7 @@ import React from 'react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { Link } from 'react-router-dom';
 
 const Footer = (props) => {
   const { resume } = props;
@@ -13,9 +14,9 @@ const Footer = (props) => {
   const navLinks = links
     .map((link, index) => {
       return (
-        <div className="" key={index}>
+        <Link to={link} className="" key={index}>
           {link}
-        </div>
+        </Link>
       );
     })
     .slice(5, 8);
@@ -23,7 +24,10 @@ const Footer = (props) => {
   return (
     <div className="Footer">
       <div className="container">
-        <div className="PageLinks">{navLinks}</div>
+        <div className="PageLinks">
+          <Link to="/">home</Link>
+          {navLinks}
+        </div>
         <div className="SocialLinks">
           <div className="SocialMediaBookmarks">
             <a href={socials.LinkedIn}>

@@ -2,7 +2,7 @@ import React from 'react';
 import Course from './Course';
 
 const Education = (props) => {
-  const { education } = props;
+  const { education, isHomePage } = props;
   const { university, courses } = education;
 
   let allCourses = courses.map((course) => (
@@ -14,7 +14,9 @@ const Education = (props) => {
   // }
 
   return (
-    <div className="Education">
+    <div
+      className={isHomePage ? 'Education' : 'Education FullEducation container'}
+    >
       <div className="sectionTitleLarge">Education</div>
       <div className="EducationSection">
         <div className="University">

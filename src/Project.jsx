@@ -10,7 +10,7 @@ const Project = (props) => {
       <div className="ProjectTech">{tech.join(', ')}</div>
       <img
         className="ProjectThumbnail"
-        src={`./public/images/${name}.png`}
+        src={`./images/${name}.png`}
         alt=""
       ></img>
       <div className="ProjectDescription">{description}</div>

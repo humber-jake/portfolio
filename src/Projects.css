@@ -14,7 +14,7 @@
 .ProjectsTitle {
   font-size: 3rem;
   text-align: right;
-  margin: 3rem 15% 1rem 0;
+  margin-right: 15%;
 }
 .Projects {
   background-image: url(./assets/Projects.svg);

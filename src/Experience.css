@@ -9,6 +9,30 @@
   background-position: 52% 45%;
   background-size: 65%;
 }
+.FullCompany {
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  .PositionTitle {
+    font-size: 2rem;
+  }
+  .ExperienceByline {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    * {
+      margin-right: 1rem;
+    }
+  }
+}
+.CompanyLogo {
+  max-width: 80%;
+  margin: 2rem;
+}
+
 .ExperienceCard {
   margin: 1rem auto;
   padding: 1.25rem;
