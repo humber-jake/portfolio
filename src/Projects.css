@@ -19,7 +19,7 @@
 .FullProjectsTitle {
   font-size: 3rem;
   text-align: center;
-  margin: 3rem;
+  margin-top: 3rem;
 }
 .Projects {
   background-image: url(./assets/Projects.svg);
@@ -63,7 +63,7 @@
 
 .ProjectSlide {
   padding: 3rem;
-  margin: 3rem;
+  margin: 1rem;
   border-radius: 50px;
   width: 75%;
   .ProjectName {

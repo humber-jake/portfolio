@@ -24,9 +24,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  width: 80rem;
   margin: 0 auto;
+  width: 80rem;
 }
+
 .Navbar {
   background-image: url('/src/assets/morphing-diamonds.svg');
   box-sizing: border-box;
@@ -74,8 +75,7 @@
   background: #5cdf7d;
   box-sizing: border-box;
   margin: 0 auto;
-  width: 100%;
-  /* PLACEHOLDER DIVIDER */
+  /* width: 100%; */
 }
 .Hero {
   display: flex;
@@ -92,7 +92,6 @@
 }
 .HeroText {
   margin: 0 1rem;
-  border-radius: 50px;
   width: 29%;
   display: flex;
   flex-direction: column;
@@ -144,8 +143,8 @@
   background-image: url(./assets/morphing-diamonds.svg);
 }
 .More {
-  width: fit-content;
   display: block;
+  width: fit-content;
   margin-left: auto;
   margin-right: 5rem;
   font-size: 1.5rem;
@@ -154,14 +153,15 @@
   opacity: 80%;
 }
 .Footer {
+  box-sizing: border-box;
   display: grid;
   color: white;
   margin-top: 100px;
-  padding: 3rem;
   height: 300px;
   background: #1f2832;
 
   div {
+    margin: 3rem auto;
     grid-template-columns: 1fr 1fr 2fr;
     justify-content: flex-start;
     align-items: flex-start;
@@ -174,5 +174,114 @@
   }
   a:hover {
     opacity: 80%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 800px;
+    .ProjectsSection {
+      flex-direction: column;
+      a {
+        margin: 1rem auto;
+      }
+    }
+    .More {
+      display: block;
+      margin: 1rem auto;
+    }
+    .Experience {
+      display: flex;
+      flex-direction: column;
+      background-image: none;
+    }
+    .bodyLarge {
+      display: none;
+    }
+    .bodySmall {
+      display: flex;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 600px;
+  }
+  .NavLink {
+    display: none;
+  }
+
+  .container {
+    .Education {
+      flex-direction: column;
+      background-image: url(./assets/Education.svg);
+      background-repeat: no-repeat;
+      background-clip: content-box;
+      background-position: 98% 0%;
+      background-size: 28%;
+      align-items: flex-start;
+    }
+  }
+  .Hero .profile img {
+    display: none;
+  }
+  .HeroText {
+    width: 70%;
+    height: 400px;
+  }
+  .Technology {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  .sectionTitleLarge {
+    font-size: 1.5rem;
+  }
+  .container {
+    width: auto;
+    max-width: 400px;
+    .ProjectCard {
+      width: auto;
+    }
+    .ProjectsSection {
+      a {
+        margin: 1rem;
+      }
+    }
+    .SocialMediaBookmarks {
+      margin: 0 auto;
+      flex-direction: column;
+      a {
+        margin: 0.25rem;
+      }
+    }
+  }
+  .Footer {
+    .container {
+      margin: 0 auto;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 4rem;
+    }
+  }
+  .HeroText {
+    width: 85%;
+    height: 300px;
+    .greeting {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .Technology {
+    width: 70%;
   }
 }

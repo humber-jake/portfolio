@@ -40,7 +40,7 @@ const Navbar = (props) => {
             <Link to="/" className="Name">
               {resume.website}
             </Link>
-            <Link to="/" className="NavLink">
+            <Link to="/" className="NavLink Home">
               home
             </Link>
 

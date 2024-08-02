@@ -79,3 +79,6 @@
 .ExperienceDates {
   color: rgb(99, 99, 99);
 }
+.bodySmall {
+  display: none;
+}

@@ -25,8 +25,23 @@ const Experience = (props) => {
   return (
     <>
       <div className="ExperienceTitle">Work Experience</div>
-      <div className={isHomePage ? 'Experience' : 'FullExperience container'}>
+      <div
+        className={
+          isHomePage
+            ? 'Experience bodyLarge'
+            : 'FullExperience container bodyLarge'
+        }
+      >
         {body}
+      </div>
+      <div
+        className={
+          isHomePage
+            ? 'Experience bodySmall'
+            : 'FullExperience container bodySmall'
+        }
+      >
+        {body.slice(0, 3)}
       </div>
       {isHomePage && (
         <Link className="More" to="/experience">
