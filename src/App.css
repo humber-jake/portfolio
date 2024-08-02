@@ -210,6 +210,25 @@
   }
 }
 @media only screen and (max-width: 800px) {
+  .EducationSection {
+    background-image: none;
+    .sectionTitleLarge {
+      margin-bottom: 1rem;
+    }
+    .University {
+      .degree {
+        font-size: 1.25rem;
+      }
+      .name {
+        font-size: 1rem;
+      }
+    }
+    .Learning {
+      .name {
+        font-size: 1.25rem;
+      }
+    }
+  }
   .container {
     width: 600px;
   }
@@ -244,6 +263,19 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .container .sectionTitleSmall {
+    display: block;
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 1.5rem auto;
+    text-align: left;
+  }
+  .container .Education {
+    margin: auto 3rem;
+    .sectionTitleLarge {
+      display: none;
+    }
+  }
   .sectionTitle {
     font-size: 1.5rem;
   }

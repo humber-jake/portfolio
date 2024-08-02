@@ -87,13 +87,6 @@
   .container.FullExperience {
     width: 100%;
   }
-
-  .ExperienceTitle {
-    font-size: 1.5rem;
-    width: 75%;
-    margin: 1.5rem auto;
-    text-align: left;
-  }
   .FullCompany {
     grid-template-columns: 3fr 5fr;
     margin: 3rem auto;
@@ -125,6 +118,12 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .ExperienceTitle {
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 1.5rem auto;
+    text-align: left;
+  }
   .FullCompany {
     display: flex;
     flex-direction: column;

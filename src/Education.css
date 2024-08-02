@@ -30,6 +30,9 @@
   /* grid-template-columns: 1fr 1fr; */
   row-gap: 2rem;
 }
+.sectionTitleSmall {
+  display: none;
+}
 
 @media only screen and (max-width: 1280px) {
 }
@@ -40,14 +43,13 @@
     align-self: flex-start;
   }
   .FullEducation {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    margin: 3rem auto;
     justify-content: flex-start;
     align-items: flex-start;
-    background-position: 11% 3%;
+    background-position: 81% 3%;
     background-size: 30%;
-    margin-left: 30%;
   }
 }
 @media only screen and (max-width: 600px) {

@@ -14,24 +14,29 @@ const Education = (props) => {
   // }
 
   return (
-    <div
-      className={isHomePage ? 'Education' : 'Education FullEducation container'}
-    >
-      <div className="sectionTitleLarge">Education</div>
-      <div className="EducationSection">
-        <div className="University">
-          <div className="degree">{university.degree}</div>
-          <div className="name">{university.name}</div>
-          <div className="location">
-            {university.location},{' '}
-            <span className="dates">{university.dates}</span>
+    <>
+      <div className="sectionTitleSmall">Education</div>
+      <div
+        className={
+          isHomePage ? 'Education' : 'Education FullEducation container'
+        }
+      >
+        <div className="sectionTitleLarge">Education</div>
+        <div className="EducationSection">
+          <div className="University">
+            <div className="degree">{university.degree}</div>
+            <div className="name">{university.name}</div>
+            <div className="location">
+              {university.location},{' '}
+              <span className="dates">{university.dates}</span>
+            </div>
+            <div className="major">Major {university.major}</div>
+            <div className="minor">Minor {university.minor}</div>
           </div>
-          <div className="major">Major {university.major}</div>
-          <div className="minor">Minor {university.minor}</div>
+          {allCourses}
         </div>
-        {allCourses}
       </div>
-    </div>
+    </>
   );
 };
 
