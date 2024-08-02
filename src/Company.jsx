@@ -12,7 +12,9 @@ const Company = (props) => {
           style={isHomePage ? { background: bgColour } : { background: 'none' }}
         >
           {!isHomePage && (
-            <img className="CompanyLogo" src={`./images/${company.name}.png`} />
+            <div className="CompanyLogo">
+              <img src={`./images/${company.name}.png`} />
+            </div>
           )}
           <div className="CompanyText">
             <div className="PositionTitle">{pos.title}</div>

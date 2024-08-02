@@ -29,8 +29,11 @@
   }
 }
 .CompanyLogo {
-  max-width: 80%;
-  /* margin: 2rem; */
+  img {
+    display: block;
+    width: 80%;
+    object-fit: contain;
+  }
 }
 
 .ExperienceCard {
@@ -38,7 +41,6 @@
   padding: 1.25rem;
   width: 250px;
   height: 120px;
-  /* border: 4px solid #323232; */
   border-radius: 20px;
   text-align: center;
   text-wrap: balance;
@@ -48,18 +50,6 @@
   transition: 200ms;
   position: relative;
 }
-/* .ExperienceCard::before {
-  content: ' ';
-  position: absolute;
-  z-index: -1;
-  top: 45%;
-  left: 45%;
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-  background: black;
-  opacity: 40%;
-} */
 
 .ExperienceCard:hover {
   opacity: 100%;
@@ -69,7 +59,7 @@
   font-size: 1.25rem;
 }
 .ExperienceTitle {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 4rem;
 }
@@ -81,4 +71,68 @@
 }
 .bodySmall {
   display: none;
+}
+@media only screen and (max-width: 1280px) {
+  .Experience.bodyLarge {
+    background-size: 67%;
+    background-position: 52% 22%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .Experience.bodySmall {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container.FullExperience {
+    width: 100%;
+  }
+
+  .ExperienceTitle {
+    font-size: 1.5rem;
+    width: 75%;
+    margin: 1.5rem auto;
+    text-align: left;
+  }
+  .FullCompany {
+    grid-template-columns: 3fr 5fr;
+    margin: 3rem auto;
+    width: 90%;
+    height: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .PositionTitle {
+      font-size: 1.25rem;
+      text-wrap: balance;
+    }
+    .CompanyText {
+      .ExperienceByline {
+        display: block;
+      }
+      .ExperiencePoint {
+        margin-bottom: 1rem;
+      }
+    }
+    .CompanyLogo {
+      img {
+        max-height: 180px;
+        display: block;
+        margin: 1rem auto;
+        width: 70%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .FullCompany {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    width: 95%;
+    .CompanyLogo {
+      margin: 1rem auto;
+      width: 80%;
+    }
+  }
 }

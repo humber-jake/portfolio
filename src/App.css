@@ -238,6 +238,9 @@
   .Technology {
     width: 50%;
   }
+  .More {
+    font-size: 1.25rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
