@@ -191,7 +191,7 @@ const resume = {
       year: '2022',
       description:
         'A simple password generator created as a utility to generate one time temporary passwords.',
-      link: 'https://serene-beach-45005.herokuapp.com/',
+      link: 'https://effervescent-dragon-7c3117.netlify.app/',
     },
     // {
     //   name: 'Blackbox Generator',
