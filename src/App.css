@@ -216,7 +216,7 @@
   .Burger {
     position: absolute;
     top: 40px;
-    right: calc((100vw - 600px) / 2);
+    right: calc((100vw - 550px) / 2);
     display: block;
     height: 60px;
     width: 60px;
@@ -302,7 +302,7 @@
     height: 400px;
   }
   .Technology {
-    width: 50%;
+    width: 70%;
   }
   .More {
     font-size: 1.25rem;
@@ -311,7 +311,7 @@
 
 @media only screen and (max-width: 600px) {
   .Burger {
-    right: calc((100vw - 400px) / 2);
+    right: calc((100vw - 350px) / 2);
   }
   .BurgerMenu {
     width: 400px;
@@ -370,6 +370,6 @@
     }
   }
   .Technology {
-    width: 70%;
+    width: 90%;
   }
 }
