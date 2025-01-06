@@ -1,5 +1,5 @@
-import React from 'react';
-import Course from './Course';
+import React from "react";
+import Course from "./Course";
 
 const Education = (props) => {
   const { education, isHomePage } = props;
@@ -18,16 +18,16 @@ const Education = (props) => {
       <div className="sectionTitleSmall">Education</div>
       <div
         className={
-          isHomePage ? 'Education' : 'Education FullEducation container'
+          isHomePage ? "Education" : "Education FullEducation container"
         }
       >
         <div className="sectionTitleLarge">Education</div>
         <div className="EducationSection">
           <div className="University">
-            <div className="degree">{university.degree}</div>
-            <div className="name">{university.name}</div>
+            <h2 className="degree">{university.degree}</h2>
+            <h3 className="name">{university.name}</h3>
             <div className="location">
-              {university.location},{' '}
+              {university.location},{" "}
               <span className="dates">{university.dates}</span>
             </div>
             <div className="major">Major {university.major}</div>

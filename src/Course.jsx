@@ -1,5 +1,5 @@
-import React from 'react';
-import './Education.css';
+import React from "react";
+import "./Education.css";
 
 function Course(props) {
   const { title, instructor, host, completed } = props.course;
@@ -7,10 +7,9 @@ function Course(props) {
   return (
     <div className="Learning">
       <div className="name">{title}</div>
-      <div className="">by {instructor}</div>
-      <div className="location">
-        {host}, <span className="dates">{completed}</span>
-      </div>
+      <div className="">{instructor}</div>
+      <div className="location">{host}</div>
+      <span className="dates">{completed}</span>
     </div>
   );
 }
