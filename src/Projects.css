@@ -111,6 +111,7 @@
   }
 }
 .FullProjects {
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
   .ProjectCard {

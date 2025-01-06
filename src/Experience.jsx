@@ -1,12 +1,12 @@
-import React from 'react';
-import Company from './Company';
-import './Experience.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import Company from "./Company";
+import "./Experience.css";
+import { Link } from "react-router-dom";
 
 const Experience = (props) => {
   const { experience, isHomePage } = props;
 
-  let bgPalette = ['#5BDED5', '#A0DE5B', '#5BDE7C', '#5BDEA8', '#69DE5B'];
+  let bgPalette = ["#5BDED5", "#A0DE5B", "#5BDE7C", "#5BDEA8", "#69DE5B"];
 
   Math.floor(Math.random() * bgPalette.length);
 
@@ -28,8 +28,8 @@ const Experience = (props) => {
       <div
         className={
           isHomePage
-            ? 'Experience bodyLarge'
-            : 'FullExperience container bodyLarge'
+            ? "Experience bodyLarge"
+            : "FullExperience container bodyLarge"
         }
       >
         {body}
@@ -37,8 +37,8 @@ const Experience = (props) => {
       <div
         className={
           isHomePage
-            ? 'Experience bodySmall'
-            : 'FullExperience container bodySmall'
+            ? "Experience bodySmall"
+            : "FullExperience container bodySmall"
         }
       >
         {body.slice(0, 3)}

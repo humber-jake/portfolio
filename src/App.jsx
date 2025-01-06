@@ -1,21 +1,26 @@
-import './App.css';
-import resume from './assets/resume';
+import "./App.css";
+import resume from "./assets/resume";
 // import portfolioPicture from './assets/portfolio2.png';
 // import Technology from './Technology';
 // import Education from './Education';
 // import Projects from './Projects';
-import Experience from './Experience';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import { Routes, Route, Link } from 'react-router-dom';
-import Home from './Home';
-import Education from './Education';
-import Projects from './Projects';
+import Experience from "./Experience";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./Home";
+import Education from "./Education";
+import Projects from "./Projects";
 
 function App() {
   return (
     <>
       <Navbar resume={resume} />
+      <div className="mobilewarning">
+        <h2>Uh oh!</h2>
+        The mobile version of this site is currently under construction and may
+        not display correctly.
+      </div>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route

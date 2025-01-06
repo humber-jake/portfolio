@@ -1,11 +1,17 @@
+.mobilewarning {
+  display: none;
+}
 .Name {
-  font-family: 'Abril Fatface';
+  font-family: "comfortaa";
+  font-weight: bold;
+  letter-spacing: -1px;
   text-align: left;
   font-size: 2rem;
-  margin: 0 2rem;
+  padding-left: 2rem;
 }
 .SocialMediaBookmarks {
   height: 40px;
+  padding: 0 5%;
   background: #1f2832;
   display: flex;
   flex-direction: row;
@@ -16,26 +22,44 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    margin: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
+body {
+  background: #5cdf7d;
+  .container {
+    padding: 3rem;
+    border-radius: 50px;
+    background: white;
+  }
+}
+.body {
+  padding: 3rem;
+  flex-direction: column;
+  gap: 40px;
+  display: flex;
+}
+
 .container {
-  display: inherit;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   margin: 0 auto;
-  width: 80rem;
+  width: 70rem;
 }
 
 .Navbar {
-  background-image: url('/src/assets/morphing-diamonds.svg');
+  background-image: url("/src/assets/morphing-diamonds.svg");
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
   height: auto;
+  > div {
+    width: 80%;
+  }
 }
 .NavbarElements {
+  height: 60px;
   box-sizing: border-box;
   /* width: 80rem; */
   margin: 0 auto;
@@ -43,7 +67,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  max-width: 1500px;
 }
 
 .NavLinks {
@@ -52,18 +77,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+  padding-right: 2rem;
 }
 .NavLink {
-  color: '#1f2832';
-  font-size: 1rem;
-  font-family: monospace;
+  color: "#1f2832";
+  font-size: 18px;
+  font-family: "poppins";
   background-image: linear-gradient(120deg, #5cdf7d 0%, #5cdf7d 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.5em;
   background-position: 0 100%;
   transition: background-size 0.2s ease-in;
-  padding: 0 1rem;
-  margin: 0 1rem;
+  padding: 0 0.8rem;
 }
 .NavLink:hover {
   background-size: 100% 80%;
@@ -72,22 +98,23 @@
   transition: 200ms;
 }
 .wrapper {
-  background: #5cdf7d;
+  background-image: linear-gradient(white 0%, white 55%, #5cdf7d 55.1%);
   box-sizing: border-box;
   margin: 0 auto;
 }
 .Hero {
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  gap: 80px;
 }
 .profile {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 3rem;
 }
 .HeroText {
   margin: 0 1rem;
@@ -97,7 +124,8 @@
   justify-content: center;
 }
 .greeting {
-  font-family: monospace;
+  padding-bottom: 1rem;
+  font-family: "Comfortaa";
   text-align: left;
   font-size: 3rem;
 }
@@ -107,17 +135,17 @@
 .headshot {
   height: fit-content;
   width: 450px;
-  border-radius: 100px 0 100px 100px;
+  box-sizing: border-box;
+  /* position: relative; */
+  border-radius: 225px 12px 112px 112px;
+  box-shadow: 20px 20px rgb(190, 253, 94);
 }
 .Technology {
-  box-sizing: border-box;
   max-width: 100vw;
-  margin: 0 2rem 4rem 2rem;
   width: 35%;
   padding: 1rem 2rem;
   border-radius: 50px;
   background: white;
-  margin-top: 0;
 }
 .sectionTitle {
   font-size: 1.5rem;
@@ -151,17 +179,11 @@
 .Footer {
   box-sizing: border-box;
   display: grid;
+  padding: 3rem 10%;
+  grid-template-columns: 1fr 1fr;
   color: white;
-  margin-top: 100px;
   height: 300px;
   background: #1f2832;
-
-  div {
-    margin: 3rem auto;
-    grid-template-columns: 1fr 1fr 2fr;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
   a {
     width: fit-content;
     display: block;
@@ -179,13 +201,28 @@
 
 @media only screen and (max-width: 1280px) {
   .container {
-    width: 1000px;
+    width: 52rem;
   }
 }
 
 @media only screen and (max-width: 1000px) {
+  .Navbar > div {
+    width: 90%;
+  }
+  .Navbar {
+    .Burger {
+      width: 80%;
+      margin: 0 auto;
+      svg {
+        float: right;
+      }
+    }
+  }
+  .body {
+    padding: 0.25rem;
+  }
   .container {
-    width: 800px;
+    width: 700px;
     .ProjectsSection {
       flex-direction: column;
       a {
@@ -210,17 +247,29 @@
   }
 }
 @media only screen and (max-width: 800px) {
+  .NavbarElements * {
+    display: none;
+  }
+  .mobilewarning {
+    display: block;
+    width: 60%;
+    padding: 1rem;
+    margin: 2rem auto;
+    background: lightcoral;
+    border-radius: 20px;
+    border: 5px solid rgb(183, 108, 108);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.185);
+  }
   .NavbarElements {
     height: 60px;
   }
   .Burger {
     position: absolute;
     top: 40px;
-    right: calc((100vw - 550px) / 2);
     display: block;
     height: 60px;
     width: 60px;
-    content: '>';
+    float: right;
     background: rgb(255, 255, 255);
     svg {
       height: 60px;
@@ -275,7 +324,8 @@
     }
   }
   .container {
-    width: 600px;
+    width: 590px;
+    box-sizing: border-box;
   }
   .NavLinks {
     .NavLink {
@@ -337,7 +387,7 @@
   }
   .container {
     width: auto;
-    max-width: 400px;
+    /* max-width: 400px; */
     .ProjectCard {
       width: auto;
     }

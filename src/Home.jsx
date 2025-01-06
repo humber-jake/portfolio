@@ -1,12 +1,12 @@
-import './App.css';
-import resume from './assets/resume';
-import portfolioPicture from './assets/portfolio2.png';
-import Technology from './Technology';
-import Education from './Education';
-import Projects from './Projects';
-import Experience from './Experience';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import "./App.css";
+import resume from "./assets/resume";
+import portfolioPicture from "./assets/portfolio3.png";
+import Technology from "./Technology";
+import Education from "./Education";
+import Projects from "./Projects";
+import Experience from "./Experience";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Home() {
   return (

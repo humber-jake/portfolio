@@ -1,8 +1,8 @@
-import React from 'react';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import { Link } from 'react-router-dom';
+import React from "react";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import { Link } from "react-router-dom";
 
 const Footer = (props) => {
   const { resume } = props;
@@ -23,23 +23,21 @@ const Footer = (props) => {
 
   return (
     <div className="Footer">
-      <div className="container">
-        <div className="PageLinks">
-          <Link to="/">home</Link>
-          {navLinks}
-        </div>
-        <div className="SocialLinks">
-          <div className="SocialMediaBookmarks">
-            <a href={socials.LinkedIn}>
-              <LinkedInIcon htmlColor="white" />
-            </a>
-            <a href={socials.Instagram}>
-              <InstagramIcon htmlColor="white" />
-            </a>
-            <a href={socials.GitHub}>
-              <GitHubIcon htmlColor="white" />
-            </a>
-          </div>
+      <div className="PageLinks">
+        <Link to="/">home</Link>
+        {navLinks}
+      </div>
+      <div className="SocialLinks">
+        <div className="SocialMediaBookmarks">
+          <a href={socials.LinkedIn}>
+            <LinkedInIcon htmlColor="white" />
+          </a>
+          <a href={socials.Instagram}>
+            <InstagramIcon htmlColor="white" />
+          </a>
+          <a href={socials.GitHub}>
+            <GitHubIcon htmlColor="white" />
+          </a>
         </div>
       </div>
     </div>
