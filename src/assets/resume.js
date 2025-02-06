@@ -166,6 +166,21 @@ const resume = {
   // ===================================
   projects: [
     {
+      name: "Every Dead End",
+      tech: [
+        "React",
+        "Leafleft",
+        "Cloudinary",
+        "Supabase",
+        "Exifr",
+        "Google OAuth",
+      ],
+      year: "2025",
+      description:
+        "An interactive online map showing photos of every dead end road in Los Angeles. A collaboration with photographer and bike advocate Erik Binggeser (@truemarmalade) to raise money for the Los Angeles Bicycle Academy.",
+      link: "https://everydeadend.netlify.app/",
+    },
+    {
       name: "WordleXL",
       tech: ["React", "React-router", "MUI"],
       year: "2022",
